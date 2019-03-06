@@ -29,7 +29,7 @@ void CountingSort(int *A, int *B, int k, int n){ // k = maior valor do array
         C[i] = C[i] + C[i-1]; //Ve quantos elementos tem antes dele 
     }
 
-    for (j=(n-1); j>=0 ; j--){
+    for (j=(n-1); j>=0 ; j--) {
         B[C[A[j]]-1] = A[j];
         C[A[j]] = C[A[j]] - 1;
     }
